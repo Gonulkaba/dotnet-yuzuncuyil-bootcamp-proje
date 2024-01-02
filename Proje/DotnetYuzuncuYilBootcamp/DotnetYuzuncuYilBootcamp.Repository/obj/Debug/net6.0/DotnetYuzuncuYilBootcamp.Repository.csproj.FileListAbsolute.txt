@@ -1,0 +1,15 @@
+C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.Repository\bin\Debug\net6.0\DotnetYuzuncuYilBootcamp.Repository.deps.json
+C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.Repository\bin\Debug\net6.0\DotnetYuzuncuYilBootcamp.Repository.dll
+C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.Repository\bin\Debug\net6.0\DotnetYuzuncuYilBootcamp.Repository.pdb
+C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.Repository\bin\Debug\net6.0\DotnetYuzuncuYilBootcamp.Core.dll
+C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.Repository\bin\Debug\net6.0\DotnetYuzuncuYilBootcamp.Core.pdb
+C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.Repository\obj\Debug\net6.0\DotnetYuzuncuYilBootcamp.Repository.csproj.AssemblyReference.cache
+C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.Repository\obj\Debug\net6.0\DotnetYuzuncuYilBootcamp.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.Repository\obj\Debug\net6.0\DotnetYuzuncuYilBootcamp.Repository.AssemblyInfoInputs.cache
+C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.Repository\obj\Debug\net6.0\DotnetYuzuncuYilBootcamp.Repository.AssemblyInfo.cs
+C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.Repository\obj\Debug\net6.0\DotnetYuzuncuYilBootcamp.Repository.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.Repository\obj\Debug\net6.0\DotnetYuzuncuYilBootcamp.Repository.csproj.CopyComplete
+C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.Repository\obj\Debug\net6.0\DotnetYuzuncuYilBootcamp.Repository.dll
+C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.Repository\obj\Debug\net6.0\refint\DotnetYuzuncuYilBootcamp.Repository.dll
+C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.Repository\obj\Debug\net6.0\DotnetYuzuncuYilBootcamp.Repository.pdb
+C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.Repository\obj\Debug\net6.0\ref\DotnetYuzuncuYilBootcamp.Repository.dll

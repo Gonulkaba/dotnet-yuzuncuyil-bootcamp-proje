@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "DotnetYuzuncuYilBootcamp.Repository/1.0.0": {
+        "dependencies": {
+          "DotnetYuzuncuYilBootcamp.Core": "1.0.0"
+        },
+        "runtime": {
+          "DotnetYuzuncuYilBootcamp.Repository.dll": {}
+        }
+      },
+      "DotnetYuzuncuYilBootcamp.Core/1.0.0": {
+        "runtime": {
+          "DotnetYuzuncuYilBootcamp.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DotnetYuzuncuYilBootcamp.Repository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DotnetYuzuncuYilBootcamp.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

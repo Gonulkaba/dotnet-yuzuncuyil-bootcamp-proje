@@ -1,0 +1,12 @@
+C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.Core\bin\Debug\net6.0\DotnetYuzuncuYilBootcamp.Core.deps.json
+C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.Core\bin\Debug\net6.0\DotnetYuzuncuYilBootcamp.Core.dll
+C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.Core\bin\Debug\net6.0\DotnetYuzuncuYilBootcamp.Core.pdb
+C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.Core\obj\Debug\net6.0\DotnetYuzuncuYilBootcamp.Core.csproj.AssemblyReference.cache
+C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.Core\obj\Debug\net6.0\DotnetYuzuncuYilBootcamp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.Core\obj\Debug\net6.0\DotnetYuzuncuYilBootcamp.Core.AssemblyInfoInputs.cache
+C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.Core\obj\Debug\net6.0\DotnetYuzuncuYilBootcamp.Core.AssemblyInfo.cs
+C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.Core\obj\Debug\net6.0\DotnetYuzuncuYilBootcamp.Core.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.Core\obj\Debug\net6.0\DotnetYuzuncuYilBootcamp.Core.dll
+C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.Core\obj\Debug\net6.0\refint\DotnetYuzuncuYilBootcamp.Core.dll
+C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.Core\obj\Debug\net6.0\DotnetYuzuncuYilBootcamp.Core.pdb
+C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.Core\obj\Debug\net6.0\ref\DotnetYuzuncuYilBootcamp.Core.dll

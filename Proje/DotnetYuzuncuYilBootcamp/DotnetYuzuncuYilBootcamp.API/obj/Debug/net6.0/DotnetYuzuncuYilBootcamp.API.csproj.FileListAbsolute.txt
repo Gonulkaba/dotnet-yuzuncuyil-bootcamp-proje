@@ -30,3 +30,9 @@ C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\Do
 C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.API\obj\Debug\net6.0\DotnetYuzuncuYilBootcamp.API.pdb
 C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.API\obj\Debug\net6.0\DotnetYuzuncuYilBootcamp.API.genruntimeconfig.cache
 C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.API\obj\Debug\net6.0\ref\DotnetYuzuncuYilBootcamp.API.dll
+C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.API\bin\Debug\net6.0\DotnetYuzuncuYilBootcamp.Core.dll
+C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.API\bin\Debug\net6.0\DotnetYuzuncuYilBootcamp.Repository.dll
+C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.API\bin\Debug\net6.0\DotnetYuzuncuYilBootcamp.Service.dll
+C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.API\bin\Debug\net6.0\DotnetYuzuncuYilBootcamp.Service.pdb
+C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.API\bin\Debug\net6.0\DotnetYuzuncuYilBootcamp.Core.pdb
+C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.API\bin\Debug\net6.0\DotnetYuzuncuYilBootcamp.Repository.pdb
