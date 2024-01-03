@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace DotnetYuzuncuYilBootcamp.Core.Models
 {
@@ -19,7 +18,6 @@ namespace DotnetYuzuncuYilBootcamp.Core.Models
 
         //Birebir ilişki
         public Employee Employee { get; set; }
-        public Task Task { get; set; }
 
     }
 }

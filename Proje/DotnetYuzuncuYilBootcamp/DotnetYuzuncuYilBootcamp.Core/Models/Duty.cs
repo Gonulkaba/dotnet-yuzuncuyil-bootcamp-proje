@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace DotnetYuzuncuYilBootcamp.Core.Models
 {
-    public class Task : BaseEntity
+    public class Duty : BaseEntity
     {
-        public string TaskName { get; set; }
+        public string DutyName { get; set; }
         public string Description { get; set; }
         public string Status { get; set; }
 

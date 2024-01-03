@@ -10,6 +10,6 @@ namespace DotnetYuzuncuYilBootcamp.Core.Models
     {
         public int Id { get; set; }
         public DateTime StartedDate { get; set; }
-        public DateTime UpdatedDate { get; set; }
+        public DateTime? UpdatedDate { get; set; }
     }
 }
