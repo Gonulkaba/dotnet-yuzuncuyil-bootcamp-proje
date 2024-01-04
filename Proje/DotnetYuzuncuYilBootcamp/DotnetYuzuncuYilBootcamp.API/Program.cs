@@ -1,8 +1,13 @@
 using DotnetYuzuncuYilBootcamp.Core.Repositories;
+using DotnetYuzuncuYilBootcamp.Core.Services;
 using DotnetYuzuncuYilBootcamp.Core.UnitOfWorks;
 using DotnetYuzuncuYilBootcamp.Repository;
 using DotnetYuzuncuYilBootcamp.Repository.Repositories;
 using DotnetYuzuncuYilBootcamp.Repository.UnitOfWorks;
+using DotnetYuzuncuYilBootcamp.Service;
+using DotnetYuzuncuYilBootcamp.Service.Mapping;
+using DotnetYuzuncuYilBootcamp.Service.Validations;
+using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
@@ -17,6 +22,15 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IUnitOfWork,UnitOfWork>(); 
 builder.Services.AddScoped(typeof(IGenericRepository<>),typeof(GenericRepository<>));
+builder.Services.AddScoped(typeof(IService<>), typeof(Service<>));
+builder.Services.AddAutoMapper(typeof(MapProfile));
+builder.Services.AddControllers()
+    .AddFluentValidation(x => 
+    {
+        x.RegisterValidatorsFromAssemblyContaining<DutyDtoValidator>();
+        x.RegisterValidatorsFromAssemblyContaining<EmployeeDtoValidator>();
+        x.RegisterValidatorsFromAssemblyContaining<EmployeeProfileDtoValidator>();
+    });
 
 //AppDbContext iþlemleri 
 builder.Services.AddDbContext<AppDbContext>(x =>
