@@ -4,8 +4,8 @@ using DotnetYuzuncuYilBootcamp.Core.UnitOfWorks;
 using DotnetYuzuncuYilBootcamp.Repository;
 using DotnetYuzuncuYilBootcamp.Repository.Repositories;
 using DotnetYuzuncuYilBootcamp.Repository.UnitOfWorks;
-using DotnetYuzuncuYilBootcamp.Service;
 using DotnetYuzuncuYilBootcamp.Service.Mapping;
+using DotnetYuzuncuYilBootcamp.Service.Services;
 using DotnetYuzuncuYilBootcamp.Service.Validations;
 using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
@@ -23,6 +23,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IUnitOfWork,UnitOfWork>(); 
 builder.Services.AddScoped(typeof(IGenericRepository<>),typeof(GenericRepository<>));
 builder.Services.AddScoped(typeof(IService<>), typeof(Service<>));
+builder.Services.AddScoped<IDutyService, DutyService>();
 builder.Services.AddAutoMapper(typeof(MapProfile));
 builder.Services.AddControllers()
     .AddFluentValidation(x => 
