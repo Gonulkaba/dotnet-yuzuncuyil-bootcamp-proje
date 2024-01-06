@@ -1,3 +1,5 @@
+using DotnetYuzuncuYilBootcamp.API.Abstraction;
+using DotnetYuzuncuYilBootcamp.API.Concrete;
 using DotnetYuzuncuYilBootcamp.Core.Repositories;
 using DotnetYuzuncuYilBootcamp.Core.Services;
 using DotnetYuzuncuYilBootcamp.Core.UnitOfWorks;
@@ -24,7 +26,10 @@ builder.Services.AddScoped<IUnitOfWork,UnitOfWork>();
 builder.Services.AddScoped(typeof(IGenericRepository<>),typeof(GenericRepository<>));
 builder.Services.AddScoped(typeof(IService<>), typeof(Service<>));
 builder.Services.AddScoped<IDutyService, DutyService>();
+builder.Services.AddScoped<IEmployeeService, EmployeeService>();
+builder.Services.AddScoped<IEmployeeProfileService, EmployeeProfileService>();
 builder.Services.AddAutoMapper(typeof(MapProfile));
+
 builder.Services.AddControllers()
     .AddFluentValidation(x => 
     {

@@ -16,6 +16,53 @@ namespace DotnetYuzuncuYilBootcamp.Repository
         public DbSet<Employee> Employees { get; set; }
         public DbSet<EmployeeProfile> EmployeesProfiles { get; set; }
 
+        public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+        {
+            foreach (var item in ChangeTracker.Entries()) 
+            {
+                if (item.Entity is BaseEntity entityReference)
+                {
+                    switch (item.State) 
+                    {
+                        case EntityState.Modified:
+                            {
+                                entityReference.UpdatedDate = DateTime.Now;
+                                break;
+                            }
+                        case EntityState.Added:
+                            {
+                                entityReference.StartedDate = DateTime.Now;
+                                break;
+                            }
+                    }
+                }
+            }
+            return base.SaveChangesAsync(cancellationToken);
+        }
+        public override int SaveChanges()
+        {
+            foreach (var item in ChangeTracker.Entries())
+            {
+                if (item.Entity is BaseEntity entityReference)
+                {
+                    switch (item.State)
+                    {
+                        case EntityState.Modified:
+                            {
+                                entityReference.UpdatedDate = DateTime.Now;
+                                break;
+                            }
+                        case EntityState.Added:
+                            {
+                                entityReference.StartedDate = DateTime.Now;
+                                break;
+                            }
+                    }
+                }
+            }
+            return base.SaveChanges();
+        }
+
         //Constructor
         public AppDbContext(DbContextOptions<AppDbContext> options):base(options) 
         {
@@ -24,6 +71,7 @@ namespace DotnetYuzuncuYilBootcamp.Repository
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly()); 
+            base.OnModelCreating(modelBuilder);
         }
     }
 }

@@ -16,7 +16,7 @@ namespace DotnetYuzuncuYilBootcamp.API.Controllers
             _mapper = mapper;
             _dutyService = dutyService;
         }
-        // api/Team/
+        // api/Duty/
         [HttpGet]
         public async Task<IActionResult> All()  
         {
@@ -26,7 +26,7 @@ namespace DotnetYuzuncuYilBootcamp.API.Controllers
         }
 
         [HttpGet("{id}")]  
-        // Get api/team/3 
+        // Get api/Duty/3 
         public async Task<IActionResult> GetById(int id) 
         {
             var duty = await _dutyService.GetByIdAsync(id);
