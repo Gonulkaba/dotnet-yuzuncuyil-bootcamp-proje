@@ -1,9 +1,10 @@
 ﻿using DotnetYuzuncuYilBootcamp.Core.DTOs.Authentication;
 
-namespace DotnetYuzuncuYilBootcamp.API.Abstraction
+namespace DotnetYuzuncuYilBootcamp.Service.Abstraction
 {
     public interface IJwtAuthenticationManager
     {
         AuthResponseDto Authenticate(string userName, string password);
+        int? ValidateJwtToken(string token);
     }
 }

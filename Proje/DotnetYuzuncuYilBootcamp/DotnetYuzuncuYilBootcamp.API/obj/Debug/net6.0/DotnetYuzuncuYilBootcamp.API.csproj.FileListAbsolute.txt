@@ -75,3 +75,6 @@ C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\Do
 C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.API\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
 C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.API\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.API\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.API\bin\Debug\net6.0\Autofac.dll
+C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.API\bin\Debug\net6.0\Autofac.Extensions.DependencyInjection.dll
+C:\Users\pc\Desktop\dotnet-yuzuncuyil-bootcamp\Proje\DotnetYuzuncuYilBootcamp\DotnetYuzuncuYilBootcamp.API\bin\Debug\net6.0\Newtonsoft.Json.dll

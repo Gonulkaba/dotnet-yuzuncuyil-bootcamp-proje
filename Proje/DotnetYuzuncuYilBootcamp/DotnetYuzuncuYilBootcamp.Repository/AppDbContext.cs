@@ -12,6 +12,12 @@ namespace DotnetYuzuncuYilBootcamp.Repository
 {
     public class AppDbContext : DbContext
     {
+        //Constructor
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+        {
+
+        }
+
         public DbSet<Duty> Duties { get; set; }  
         public DbSet<Employee> Employees { get; set; }
         public DbSet<EmployeeProfile> EmployeesProfiles { get; set; }
@@ -63,11 +69,6 @@ namespace DotnetYuzuncuYilBootcamp.Repository
             return base.SaveChanges();
         }
 
-        //Constructor
-        public AppDbContext(DbContextOptions<AppDbContext> options):base(options) 
-        {
-        
-        }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly()); 

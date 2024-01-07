@@ -5,6 +5,7 @@ using DotnetYuzuncuYilBootcamp.Core.Models;
 using DotnetYuzuncuYilBootcamp.Core.Repositories;
 using DotnetYuzuncuYilBootcamp.Core.Services;
 using DotnetYuzuncuYilBootcamp.Core.UnitOfWorks;
+using DotnetYuzuncuYilBootcamp.Service.Abstraction;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,12 +17,14 @@ namespace DotnetYuzuncuYilBootcamp.Service.Services
 {
     public class EmployeeService : Service<Employee>, IEmployeeService
     {
-        private readonly IEmployeeRepository _employeeRepository;
+        private readonly IGenericRepository<Employee> _repository;
         private readonly IMapper _mapper;
-        public EmployeeService(IGenericRepository<Employee> repository, IUnitOfWork unitOfWork, IEmployeeRepository employeeRepository, IMapper mapper) : base(repository, unitOfWork)
+        private readonly IJwtAuthenticationManager _jwtAuthenticationManager;
+        public EmployeeService(IGenericRepository<Employee> repository, IUnitOfWork unitOfWork, IMapper mapper, IJwtAuthenticationManager jwtAuthenticationManager) : base(repository, unitOfWork)
         {
-            _employeeRepository = employeeRepository;
+            _repository = repository;
             _mapper = mapper;
+            _jwtAuthenticationManager= jwtAuthenticationManager;
         } 
         public string GeneratePasswordHash(string userName, string password)
         {
@@ -67,9 +70,36 @@ namespace DotnetYuzuncuYilBootcamp.Service.Services
         public EmployeeDto FindUser(string userName, string password)  
         {
             string passHashed = GeneratePasswordHash(userName, password);
-            var employee = _employeeRepository.Where(x => x.UserName == userName && x.Password == passHashed).FirstOrDefault();
+            var employee = _repository.Where(x => x.UserName == userName && x.Password == passHashed).FirstOrDefault();
             var employeeDto = _mapper.Map<EmployeeDto>(employee);
             return employeeDto;
+        }
+
+        public Employee SignUp(AuthRequestDto authDto)  
+        {
+
+            #region Password'un hash'li halini veri tabanına göndermek için güncelleme yap
+            var passwordHash =GeneratePasswordHash(authDto.UserName, authDto.Password);
+            #endregion
+
+            var employee =AddAsync(new Employee
+            {
+                Email = authDto.Email,
+                Password = passwordHash,
+                UserName = authDto.UserName,
+                Position = authDto.position
+            });
+            return employee.Result;
+        }
+
+        public AuthResponseDto Login(AuthRequestDto request)
+        {
+            AuthResponseDto responseDto = new AuthResponseDto();
+            EmployeeDto employee = FindUser(request.UserName, request.Password);
+            responseDto = _jwtAuthenticationManager.Authenticate(request.UserName, request.Password);
+            responseDto.Employee = employee;
+
+            return responseDto;
         }
     }
 }

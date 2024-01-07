@@ -11,6 +11,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("c04e0bd7-6d00-45d7-ac23-36d59c14c94d")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("DotnetYuzuncuYilBootcamp.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

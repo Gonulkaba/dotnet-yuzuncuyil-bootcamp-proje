@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
-using DotnetYuzuncuYilBootcamp.API.Abstraction;
 using DotnetYuzuncuYilBootcamp.Core.DTOs;
 using DotnetYuzuncuYilBootcamp.Core.DTOs.Authentication;
 using DotnetYuzuncuYilBootcamp.Core.Models;
 using DotnetYuzuncuYilBootcamp.Core.Services;
+using DotnetYuzuncuYilBootcamp.Service.Abstraction;
 using DotnetYuzuncuYilBootcamp.Service.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -14,13 +14,11 @@ namespace DotnetYuzuncuYilBootcamp.API.Controllers
     {
         private readonly IMapper _mapper;
         private readonly IEmployeeService _employeeService;
-        private readonly IJwtAuthenticationManager _jwtAuthenticationManager;
-        public EmployeeController(IMapper mapper, IEmployeeService employeeService, IJwtAuthenticationManager jwtAuthenticationManager)
+        public EmployeeController(IMapper mapper, IEmployeeService employeeService)
         {
             _mapper = mapper;
             _employeeService = employeeService;
-            _jwtAuthenticationManager = jwtAuthenticationManager;   
-        }
+       }
         // api/Employee/
         [HttpGet]
         public async Task<IActionResult> All()
@@ -54,45 +52,23 @@ namespace DotnetYuzuncuYilBootcamp.API.Controllers
 
             return CreateActionResult(GlobalResultDto<NoContentDto>.Success(204));
         }
-                
+
         [HttpPost("Signup")]
         public async Task<IActionResult> SignUp(AuthRequestDto authDto)
         {
-            #region Password'un hash'li halini veri tabanına göndermek için güncelleme yap
-            var passwordHash = _employeeService.GeneratePasswordHash(authDto.UserName,authDto.Password);
-            #endregion
-
-            var employee = await _employeeService.AddAsync(new Employee
-            {
-                Email = authDto.Email,
-                Password = passwordHash,
-                UserName = authDto.UserName,
-                Position = authDto.position
-            });
+            var employee = _employeeService.SignUp(authDto);
             var employeeDto = _mapper.Map<EmployeeDto>(employee);
             return CreateActionResult(GlobalResultDto<EmployeeDto>.Success(201, employeeDto));
         }
 
-        [HttpPost("Login")] 
+        [HttpPost("Login")]
         public IActionResult Login(AuthRequestDto authDto)
         {
-            AuthResponseDto responseDto = new AuthResponseDto();
-            EmployeeDto employee = _employeeService.FindUser(authDto.UserName, authDto.Password);
-            if (employee == null)
-                return CreateActionResult(GlobalResultDto<NoContentDto>.Success(401));
+            var result = _employeeService.Login(authDto);
+            if (result.Employee != null)
+                return CreateActionResult(GlobalResultDto<AuthResponseDto>.Success(200, result));
             else
-            {
-                responseDto = _jwtAuthenticationManager.Authenticate(authDto.UserName,authDto.Password);
-                if (responseDto == null) 
-                {
-                    return CreateActionResult(GlobalResultDto<NoContentDto>.Success(401));
-                }
-                else
-                {
-                    responseDto.Employee = employee;
-                }
-            }
-            return CreateActionResult(GlobalResultDto<AuthResponseDto>.Success(200, responseDto));
+                return CreateActionResult(GlobalResultDto<AuthResponseDto>.Success(401, result));
         }
 
     }
