@@ -87,12 +87,12 @@ namespace DotnetYuzuncuYilBootcamp.Service.Services
                 Email = authDto.Email,
                 Password = passwordHash,
                 UserName = authDto.UserName,
-                Position = authDto.position
+                Position = authDto.Position
             });
             return employee.Result;
         }
 
-        public AuthResponseDto Login(AuthRequestDto request)
+        public AuthResponseDto Login(AuthLoginDto request)
         {
             AuthResponseDto responseDto = new AuthResponseDto();
             EmployeeDto employee = FindUser(request.UserName, request.Password);

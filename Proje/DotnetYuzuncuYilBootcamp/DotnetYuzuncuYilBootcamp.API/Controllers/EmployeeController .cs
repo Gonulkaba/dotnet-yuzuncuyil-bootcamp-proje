@@ -62,7 +62,7 @@ namespace DotnetYuzuncuYilBootcamp.API.Controllers
         }
 
         [HttpPost("Login")]
-        public IActionResult Login(AuthRequestDto authDto)
+        public IActionResult Login(AuthLoginDto authDto)
         {
             var result = _employeeService.Login(authDto);
             if (result.Employee != null)

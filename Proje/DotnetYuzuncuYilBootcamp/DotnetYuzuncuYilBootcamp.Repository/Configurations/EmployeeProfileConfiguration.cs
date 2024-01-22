@@ -25,8 +25,9 @@ namespace DotnetYuzuncuYilBootcamp.Repository.Configurations
             //maksimum uzunluğu belirleme ve bu alanı zorunlu hale getirme
             builder.Property(t => t.FirstName).HasMaxLength(150).IsRequired();
             builder.Property(t => t.LastName).HasMaxLength(150).IsRequired();
-            builder.Property(t => t.Phone).HasMaxLength(11).IsRequired();
+            builder.Property(t => t.Phone).HasMaxLength(15).IsRequired();
             builder.Property(t => t.Address).HasMaxLength(250).IsRequired();
+            builder.Property(t => t.EmployeeId).IsRequired();
 
             //Tablo ismini belirleme (Opsiyon) 
             builder.ToTable("EmployeesProfiles");

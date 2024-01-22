@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DotnetYuzuncuYilBootcamp.Repository.Seeds
 {
-    internal class EmployeeProfileSeed : IEntityTypeConfiguration<EmployeeProfile>
+    public class EmployeeProfileSeed : IEntityTypeConfiguration<EmployeeProfile>
     {
         public void Configure(EntityTypeBuilder<EmployeeProfile> builder)
         {

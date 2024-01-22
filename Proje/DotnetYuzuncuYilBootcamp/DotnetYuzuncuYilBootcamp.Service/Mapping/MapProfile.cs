@@ -23,6 +23,5 @@ namespace DotnetYuzuncuYilBootcamp.Service.Mapping
             CreateMap<EmployeeDto, Employee>();
             CreateMap<EmployeeProfileDto, EmployeeProfile>();
         }
-
     }
 }

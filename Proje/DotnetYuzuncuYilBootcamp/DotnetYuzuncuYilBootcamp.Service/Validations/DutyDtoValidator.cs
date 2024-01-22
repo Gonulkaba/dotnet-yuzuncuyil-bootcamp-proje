@@ -25,6 +25,11 @@ namespace DotnetYuzuncuYilBootcamp.Service.Validations
                 .NotEmpty().WithMessage("Status alanı boş geçilemez")
                 .MaximumLength(50).WithMessage("Status alanı en fazla 50 karakter olabilir. ");
 
+            RuleFor(x => x.EmployeeId).NotNull().WithMessage("Bu alan null geçilemez.")
+                .NotEmpty().WithMessage("Bu alan boş geçilemez")
+                .Must(id => id != 0)
+                .WithMessage("Id alanı 0 olamaz");
+
         }
     }
 }

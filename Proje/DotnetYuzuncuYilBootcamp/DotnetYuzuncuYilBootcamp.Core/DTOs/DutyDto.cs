@@ -11,5 +11,6 @@ namespace DotnetYuzuncuYilBootcamp.Core.DTOs
         public string DutyName { get; set; }
         public string Description { get; set;}
         public string Status { get; set; }
+        public int EmployeeId { get; set; } 
     }
 }

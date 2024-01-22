@@ -26,6 +26,7 @@ namespace DotnetYuzuncuYilBootcamp.Repository.Configurations
             builder.Property(t => t.DutyName).HasMaxLength(100).IsRequired();
             builder.Property(t => t.Description).HasMaxLength(350).IsRequired();
             builder.Property(t => t.Status).HasMaxLength(50).IsRequired();
+            builder.Property(t => t.EmployeeId).IsRequired();
 
             //Tablo ismini belirleme (Opsiyon) 
             builder.ToTable("Duties");
