@@ -26,9 +26,8 @@ namespace DotnetYuzuncuYilBootcamp.Service.Validations
 
             RuleFor(x => x.Phone).NotEmpty().WithMessage("Telefon numarası alanı boş olamaz.")
               .NotNull().WithMessage("Telefon numarası alanı null olamaz.")
-              .Length(10,15).WithMessage("Kullanıcı adı 10 ve 15 karakter arasında olmalıdır.")
-              .Must(x => int.TryParse(x, out _)).WithMessage("Telefon numarası sadece sayılardan oluşmalıdır.");
-
+              .Length(10, 15).WithMessage("Telefon numarası alanı 10 ve 15 karakter arasında olmalıdır.");
+              
             RuleFor(x => x.EmployeeId).NotEmpty().WithMessage("Bu alan boş olamaz.")
               .NotNull().WithMessage("Bu alan null olamaz.")
               .Must(id => id != 0)

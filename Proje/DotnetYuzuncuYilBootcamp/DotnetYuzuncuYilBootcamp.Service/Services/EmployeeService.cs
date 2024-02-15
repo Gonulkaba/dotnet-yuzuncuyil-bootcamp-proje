@@ -75,6 +75,16 @@ namespace DotnetYuzuncuYilBootcamp.Service.Services
             return employeeDto;
         }
 
+
+        public Employee UpdateEmployee(Employee employee, AuthRequestDto authRequestDto)
+        {
+            employee.UserName = authRequestDto.UserName;
+            employee.Email = authRequestDto.Email;
+            employee.Position = authRequestDto.Position;
+            employee.Password = GeneratePasswordHash(authRequestDto.UserName, authRequestDto.Password);
+            return employee;
+        }
+
         public Employee SignUp(AuthRequestDto authDto)  
         {
 

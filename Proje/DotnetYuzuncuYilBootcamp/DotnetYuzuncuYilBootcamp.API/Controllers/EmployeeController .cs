@@ -37,10 +37,12 @@ namespace DotnetYuzuncuYilBootcamp.API.Controllers
             return CreateActionResult(GlobalResultDto<EmployeeDto>.Success(200, employeeDto));
         }
 
-        [HttpPut]
-        public async Task<IActionResult> Update(EmployeeDto employeeDto)
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update(AuthRequestDto authRequestDto, int id)
         {
-            await _employeeService.UpdateAsync(_mapper.Map<Employee>(employeeDto));
+            var employee = await _employeeService.GetByIdAsync(id);
+            employee = _employeeService.UpdateEmployee(employee, authRequestDto);
+            _employeeService.UpdateAsync(employee);
             return CreateActionResult(GlobalResultDto<NoContentDto>.Success(204));
         }
 

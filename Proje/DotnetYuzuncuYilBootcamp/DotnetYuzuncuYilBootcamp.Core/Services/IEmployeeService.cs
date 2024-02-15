@@ -13,6 +13,7 @@ namespace DotnetYuzuncuYilBootcamp.Core.Services
     {
         string GeneratePasswordHash(string userName, string password);
         EmployeeDto FindUser(string userName, string password);
+        Employee UpdateEmployee(Employee employee, AuthRequestDto authRequestDto);
         AuthResponseDto Login(AuthLoginDto request);
         Employee SignUp(AuthRequestDto authDto);
     }

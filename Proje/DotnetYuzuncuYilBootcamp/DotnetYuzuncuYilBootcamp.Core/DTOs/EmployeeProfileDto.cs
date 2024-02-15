@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace DotnetYuzuncuYilBootcamp.Core.DTOs
 {
-    public class EmployeeProfileDto:BaseDto
+    public class EmployeeProfileDto
     {
+        public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Address { get; set; }

@@ -1,4 +1,6 @@
-﻿using DotnetYuzuncuYilBootcamp.Core.Repositories;
+﻿using DotnetYuzuncuYilBootcamp.Core.DTOs.Authentication;
+using DotnetYuzuncuYilBootcamp.Core.Models;
+using DotnetYuzuncuYilBootcamp.Core.Repositories;
 using DotnetYuzuncuYilBootcamp.Core.Services;
 using DotnetYuzuncuYilBootcamp.Core.UnitOfWorks;
 using Microsoft.EntityFrameworkCore;
